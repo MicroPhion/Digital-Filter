@@ -1,0 +1,310 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyFilter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MyFilter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MyFilter"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MyFilter 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MYFILTER_DIALOG DIALOGEX 0, 0, 484, 487
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MyFilter"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "Class",IDC_STATIC,0,0,484,187
+    CONTROL         "FIR",IDC_FILTER_CLASS_FIR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,37,8,63,19
+    CONTROL         "IIR",IDC_FILTER_CLASS_IIR,"Button",BS_AUTORADIOBUTTON,
+                    134,8,63,19
+    GROUPBOX        "Type",IDC_STATIC,0,184,483,32
+    GROUPBOX        "Mode",IDC_STATIC,0,214,483,32
+    GROUPBOX        "Static",IDC_STATIC,0,246,483,32
+    GROUPBOX        "Static",IDC_STATIC,1,279,483,32
+    LTEXT           "Sample Frequency",IDC_STATIC,231,8,73,19
+    EDITTEXT        IDC_SAMPLE_FREQUENCY,306,8,63,19,ES_AUTOHSCROLL
+    CONTROL         "LowPass",IDC_FILTER_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,31,197,58,13
+    CONTROL         "HighPass",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,104,
+                    197,58,13
+    CONTROL         "BandPass",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,177,
+                    197,58,13
+    CONTROL         "BandStop",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,250,
+                    197,58,13
+    CONTROL         "Zero Phase Shift",IDC_FILTER_MODE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,31,228,90,14
+    CONTROL         "Analysis simulate",IDC_RADIO8,"Button",
+                    BS_AUTORADIOBUTTON,139,228,84,14
+    CONTROL         "Rectify",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,252,228,54,14
+    LTEXT           "LowPass",IDC_STATIC,29,259,31,16
+    EDITTEXT        IDC_LOWPASS_FREQUENCY,63,259,39,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOWPASS_SLOPE,142,259,53,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "HighPass",IDC_STATIC,224,259,35,16
+    EDITTEXT        IDC_HIGHPASS_FREQUENCY,260,259,39,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_HIGHPASS_SLOPE,333,259,53,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Start",IDC_STATIC,29,289,26,12
+    EDITTEXT        IDC_START_FREQUENCY,62,289,39,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_START_SLOPE,141,289,53,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Stop",IDC_STATIC,226,289,32,12
+    EDITTEXT        IDC_STOP_FREQUENCY,260,289,39,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_STOP_SLOPE,334,289,53,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Show ",IDC_SHOW_WINDOW,411,8,66,19
+    LTEXT           "OriginSignal",IDC_ORIGINSIGNAL,2,314,481,73,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "H(exp(jw))",IDC_FUNCTION,1,34,483,151
+    LTEXT           "TransformedSignal",IDC_TRANSFORMEDSIGNAL,0,393,483,79
+    LTEXT           "Hz",IDC_STATIC,371,10,29,18
+    LTEXT           "Hz",IDC_STATIC,301,260,22,16
+    LTEXT           "Hz",IDC_STATIC,301,288,22,16
+    LTEXT           "Hz",IDC_STATIC,103,289,22,16
+    LTEXT           "Hz",IDC_STATIC,105,259,22,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MyFilter Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MyFilter\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MyFilter.EXE\0"
+            VALUE "ProductName", "MyFilter 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MYFILTER_DIALOG, DIALOG
+    BEGIN
+        HORZGUIDE, 313
+        HORZGUIDE, 393
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MYFILTER_DIALOG DLGINIT
+BEGIN
+    IDC_LOWPASS_SLOPE, 0x403, 9, 0
+0x3630, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_LOWPASS_SLOPE, 0x403, 9, 0
+0x3231, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_LOWPASS_SLOPE, 0x403, 9, 0
+0x3432, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_LOWPASS_SLOPE, 0x403, 9, 0
+0x3834, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_HIGHPASS_SLOPE, 0x403, 9, 0
+0x3630, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_HIGHPASS_SLOPE, 0x403, 9, 0
+0x3231, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_HIGHPASS_SLOPE, 0x403, 12, 0
+0x3432, 0x4264, 0x6f2f, 0x7463, 0x2020, 0x0020, 
+    IDC_HIGHPASS_SLOPE, 0x403, 9, 0
+0x3834, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_START_SLOPE, 0x403, 9, 0
+0x3630, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_START_SLOPE, 0x403, 9, 0
+0x3231, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_START_SLOPE, 0x403, 12, 0
+0x3432, 0x4264, 0x6f2f, 0x7463, 0x2020, 0x0020, 
+    IDC_START_SLOPE, 0x403, 9, 0
+0x3834, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_STOP_SLOPE, 0x403, 9, 0
+0x3630, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_STOP_SLOPE, 0x403, 9, 0
+0x3231, 0x4264, 0x6f2f, 0x7463, "\000" 
+    IDC_STOP_SLOPE, 0x403, 12, 0
+0x3432, 0x4264, 0x6f2f, 0x7463, 0x2020, 0x0020, 
+    IDC_STOP_SLOPE, 0x403, 9, 0
+0x3834, 0x4264, 0x6f2f, 0x7463, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Read",                        IDM_READ
+        MENUITEM "Write",                       IDM_WRITE
+    END
+    MENUITEM "Edit",                        65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MyFilter(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MyFilter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
